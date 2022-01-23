@@ -14,7 +14,7 @@ setup(
     name=SRC_REPO,
     version="0.0.1",
     author=AUTHOR_USER_NAME,
-    description="Asked question regarding python or not from  Stack overflow",
+    description="Asked question regarding python or not by verifying the Tag from  Stack overflow",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/shamil-k/dvc-nlp-simple-usecase",
