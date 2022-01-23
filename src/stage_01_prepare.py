@@ -1,6 +1,7 @@
 import argparse
 import os
 import shutil
+from numpy import source
 from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories
@@ -19,10 +20,20 @@ logging.basicConfig(
 
 
 def main(config_path, params_path):
+    # converting xml data to tsv
     ## read config files
     config = read_yaml(config_path)
     params = read_yaml(params_path)
-    pass
+    
+    source_data = config["source_data"]
+    input_data = os.path.join(source_data["data_dir"], source_data["data_file"])
+
+    split = params["prepare"]["split"]
+    seed = params["prepare"]["seed"]
+
+    random.seed(seed)
+
+
 
 
 if __name__ == '__main__':
