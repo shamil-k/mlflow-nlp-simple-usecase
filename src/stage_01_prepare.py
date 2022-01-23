@@ -33,8 +33,9 @@ def main(config_path, params_path):
 
     random.seed(seed)
 
-
-
+    artifacts = config["artifacts"]
+    prepare_data_dir_path = os.path.join(artifacts["ARTIFACTS_DIR"], artifacts["PREPARE_DATA"])
+    create_directories([prepare_data_dir_path])
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
