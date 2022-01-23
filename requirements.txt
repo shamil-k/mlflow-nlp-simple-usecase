@@ -4,6 +4,7 @@ dvc
 pandas
 numpy
 PyYAML
-
+scikit-learn
+lxml
 ### local packages -
 # -e . # << uncomment this to install from setup.py

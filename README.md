@@ -1,13 +1,7 @@
-# dvc-project-template
+# dvc-nlp-simple-project
 DVC project template
 
-## STEPS -
 
-### STEP 01- Create a repository by using template repository
-
-### STEP 02- Clone the new repository
-
-### STEP 03- Create a conda environment after opening the repository in VSCODE
 
 ```bash
 conda create --prefix ./env python=3.7 -y
