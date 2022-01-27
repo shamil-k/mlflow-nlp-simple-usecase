@@ -1,6 +1,8 @@
 # dvc-nlp-simple-project
 DVC project template
 
+DVC Studio link : https://studio.iterative.ai/user/shamil-k/views/dvc-nlp-simple-usecase-ideem6cwan
+
 
 
 ```bash
