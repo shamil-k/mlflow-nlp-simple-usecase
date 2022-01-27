@@ -6,7 +6,7 @@ from tqdm import tqdm
 import logging
 from src.utils.common import read_yaml, create_directories
 import random
-from src.utils.data_managmet import process_posts
+from src.utils.data_managment import process_posts
 
 STAGE = 'One'
 
