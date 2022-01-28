@@ -6,7 +6,7 @@ import logging
 from src.utils.common import read_yaml, create_directories, get_df
 import random
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from src.utils.featurize import save_matrix
 
 STAGE = "Two" 
@@ -49,7 +49,7 @@ def main(config_path, params_path):
     bag_of_words.fit_transform(train_words)
     train_words_binary_matrix = bag_of_words.transform(train_words)
 
-    tfidf = TfidfVectorizer(smooth_idf=False)
+    tfidf = TfidfTransformer(smooth_idf=False)
     tfidf.fit(train_words_binary_matrix)
     train_words_tfidf_matrix = tfidf.transform(train_words_binary_matrix)
     save_matrix(df_train, train_words_tfidf_matrix, featurized_train_data_path)
